@@ -2,6 +2,7 @@
 layout: post
 title: My new blog entrie
 date: 2023-07-12T07:19:44.989Z
+image: https://res.cloudinary.com/djacquel/image/upload/v1572189062/rose-d-automne_w6o4hs.jpg
 ---
 ![Feel good !](/assets/uploads/hamacs-auberive.jpg)
 
