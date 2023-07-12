@@ -7,6 +7,12 @@ backend:
 
 media_folder: 'assets/uploads'
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: djacquel
+    api_key: 541954834148877
+
 locale: 'fr'
 
 slug:
@@ -27,3 +33,16 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
+        media_library:
+          config:
+            default_transformations:
+              - fetch_format: auto
+                width: 300    
+                quality: auto
+                crop: fill
+                effect: grayscale
